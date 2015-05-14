@@ -1,5 +1,6 @@
-package android.curso.com.br.meusclientes;
+package android.curso.com.br.meusclientes.activity;
 
+import android.curso.com.br.meusclientes.R;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
