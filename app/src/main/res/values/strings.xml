@@ -5,4 +5,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_cliente">ClienteActivity</string>
     <string name="cliente">Cliente</string>
+    <string name="botao_cliente">Clientes</string>
+    <string name="botao_relatorios">Relatórios</string>
+    <string name="produto">Produto</string>
+    <string name="valor">Valor</string>
+    <string name="botao_cadastrar">Cadastrar</string>
 </resources>
