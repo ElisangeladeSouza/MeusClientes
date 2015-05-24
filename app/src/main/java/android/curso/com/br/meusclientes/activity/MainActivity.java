@@ -3,12 +3,14 @@ package android.curso.com.br.meusclientes.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.curso.com.br.meusclientes.R;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 
 public class MainActivity extends Activity {
@@ -20,6 +22,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AdView ad = (AdView) findViewById(R.id.ad_exemplo);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        ad.loadAd(adRequest);
 
         btClientes = (Button) findViewById(R.id.bt_clientes);
 

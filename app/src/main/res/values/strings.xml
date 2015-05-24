@@ -10,4 +10,7 @@
     <string name="produto">Produto</string>
     <string name="valor">Valor</string>
     <string name="botao_cadastrar">Cadastrar</string>
+    <string name="banner_principal">ca-app-pub-5718786601684803/6902625373</string>
+    <string name="title_activity_produto">Produto</string>
+    <string name="cliente_ativo">Cliente Ativo</string>
 </resources>

@@ -1,23 +1,33 @@
 package android.curso.com.br.meusclientes.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 /**
  * Created by root on 19/05/15.
  */
 public class Cliente implements Serializable {
 
+    private int id;
     private String nome;
-    private String produto;
-    private float valor;
+    private boolean clienteAtivo;
+    private ArrayList<Produto> produtos;
 
     public Cliente() {
     }
 
-    public Cliente(String nome, String produto, float valor) {
+    public Cliente(int id, String nome, boolean clienteAtivo) {
+        this.id = id;
         this.nome = nome;
-        this.produto = produto;
-        this.valor = valor;
+        this.clienteAtivo = clienteAtivo;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -28,19 +38,19 @@ public class Cliente implements Serializable {
         this.nome = nome;
     }
 
-    public String getProduto() {
-        return produto;
+    public boolean isClienteAtivo() {
+        return clienteAtivo;
     }
 
-    public void setProduto(String produto) {
-        this.produto = produto;
+    public void setClienteAtivo(boolean clienteAtivo) {
+        this.clienteAtivo = clienteAtivo;
     }
 
-    public float getValor() {
-        return valor;
+    public ArrayList<Produto> getProdutos() {
+        return produtos;
     }
 
-    public void setValor(float valor) {
-        this.valor = valor;
+    public void setProdutos(ArrayList<Produto> produtos) {
+        this.produtos = produtos;
     }
 }
