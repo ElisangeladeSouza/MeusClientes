@@ -54,13 +54,31 @@
         android:layout_below="@+id/tv_valor"
         android:inputType="numberDecimal"/>
 
+    <TextView
+        android:id="@+id/tv_cliente_ativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cliente_ativo"
+        android:layout_below="@+id/et_valor"
+        android:layout_marginTop="15dp"/>
+
+    <Switch
+        android:id="@+id/sw_cliente_ativo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Não"
+        android:textOn="Sim"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_cliente_ativo"/>
+
     <Button
         android:id="@+id/bt_cadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/botao_cadastrar"
-        android:layout_marginBottom="81dp"
+        android:layout_marginBottom="70dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>
